@@ -203,3 +203,12 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+# Information For Developers
+
+The code uses an event driven architecture using flask. To get covid data, the program uses the `uk_covid19` module and to get news articles the program uses the news API ([see more](https://newsapi.org/)). To schedule updates, the program uses `sched`. logging is handled by the `logging` module.
+
+The webpage is set to refresh every 60 seconds. The idea behind this is that if data has been updated, when the page is auto refreshing the data in the data structures that got updated will be re-displayed.
+
+## update scheduling and displaying data
+
+when an update is triggered, to update the covid data there is a global data structure called `COVID_DATA` that the function writes to and once the page refreshes, the data in this data structure will be displayed. The news article updates work on a similar idea/ There is a global list called `ARTICLES` that the update function writes to and once the page refreshes, the articles in the list is redisplayed.
