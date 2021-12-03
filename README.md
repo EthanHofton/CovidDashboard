@@ -7,10 +7,10 @@ A simple personalised COVID Dashboard
 Clone the git repository
 
 ```bash
-git clone https://github.com/publichealthengland/coronavirus-dashboard-api-python-sdk.git
+git clone https://github.com/EthanHofton/CovidDashboard.git
 ```
 
-or alternatively, download directly from the github page [here]()
+or alternatively, download directly from the github page [here](https://github.com/EthanHofton/CovidDashboard)
 
 ## Setup
 
