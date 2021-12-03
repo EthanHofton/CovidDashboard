@@ -12,23 +12,51 @@ git clone https://github.com/EthanHofton/CovidDashboard.git
 
 or alternatively, download directly from the github page [here](https://github.com/EthanHofton/CovidDashboard)
 
+Once the repository has been downloaded, install the package dependencies using the `requirements.txt` file
+
+Download package dependencies to local machine:
+```bash
+pip install requirements.txt
+```
+
+Download package dependencies to a virtual environment for Mac/Linux:
+```bash
+python3 -m venv venv
+. venv/bin/activate
+pip install requirements.txt
+```
+
+Download package dependencies to a virtual environment for Windows:
+```bash
+python3 -m venv venv
+venv\Scripts\activate
+pip install requirements.txt
+```
+
 ## Setup
 
-After installing, navigate to the project directory (CA)
+After installing, navigate to the project directory. Next, if you choose to install the package dependencies to a virtual environment, activate the virtual environment (to check if the environment is already active, (venv) will appear before the console line)
 
 For Mac/Linux
-
 ```bash
-cd [project directory]
 . venv/bin/activate
+```
+
+For Windows
+```bash
+venv\Scripts\activate
+```
+
+After the virtual environment has been activated (if using one), run the flask app
+
+For Mac/Linux
+```bash
 export FLASK_APP=flaskr
 flask run
 ```
 
 For Windows
 ```bash
-cd [project directory]
-venv\Scripts\activate
 set FLASK_APP=flaskr
 flask run
 ```
@@ -113,7 +141,7 @@ Editing the values in the config file will update the dashboard respectively
 
 ## News
 
-The dashboard uses the [News API](https://newsapi.org/) to gather news storys and display them on the dashboard. The way the webpage displays the news articles can be personalised by editing the config file. The parameters that can be edited are:
+The dashboard uses the [News API](https://newsapi.org/) to gather news stories and display them on the dashboard. The way the webpage displays the news articles can be personalised by editing the config file. The parameters that can be edited are:
 
 `language`, this parameter will return news articles in the specified language
 
@@ -133,7 +161,7 @@ The dashboard uses the [News API](https://newsapi.org/) to gather news storys an
 "from" : 5,
 ```
 
-`sortBy`, this parameter will change the order the news articles are retured in. possible values for `sortBy` are (`relevancy` , `popularity` and `publishedAt`. [see newsAPI documentation for more](https://newsapi.org/docs/))
+`sortBy`, this parameter will change the order the news articles are returned in. possible values for `sortBy` are (`relevancy` , `popularity` and `publishedAt`. [see newsAPI documentation for more](https://newsapi.org/docs/))
 
 ```json
 "sortBy" : "publishedAt"
