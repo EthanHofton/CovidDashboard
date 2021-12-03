@@ -1,0 +1,27 @@
+{
+    "dashboard" : {
+        "title" : "Covid19 Dashboard",
+        "local_location" : "Exeter",
+        "local_location_type" : "ltla",
+        "national_location" : "England",
+        "national_location_type" : "nation",
+        "favicon" : "favicon.ico",
+        "search_terms" : "Covid COVID-19 coronavirus"
+    },
+
+    "logging" : {
+        "format" : "%(levelname)s:%(name)s: [%(asctime)s] - %(message)s",
+        "logfile" : "flaskr/logs/data.log",
+        "level" : 10,
+        "flask_logger_level" : 40
+    },
+
+    "news_api" : {
+        "api_key" : "a6a851dc7d5849f893e85cba7d2d9a6f",
+        "api_url" : "https://newsapi.org/v2/everything",
+        "language" : "en",
+        "pageSize" : 2,
+        "from" : 5,
+        "sortBy" : "publishedAt"
+    }
+}
