@@ -4,10 +4,11 @@ A simple personalised COVID Dashboard
 
 ## Installation
 
-Clone the git repository
+Clone the git repository and navigate to directory
 
 ```bash
 git clone https://github.com/EthanHofton/CovidDashboard.git
+cd CovidDashboard
 ```
 
 or alternatively, download directly from the github page [here](https://github.com/EthanHofton/CovidDashboard)
