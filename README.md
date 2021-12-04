@@ -16,21 +16,21 @@ Once the repository has been downloaded, install the package dependencies using 
 
 Download package dependencies to local machine:
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Download package dependencies to a virtual environment for Mac/Linux:
 ```bash
 python3 -m venv venv
 . venv/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 Download package dependencies to a virtual environment for Windows:
 ```bash
 python3 -m venv venv
 venv\Scripts\activate
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ## Setup
